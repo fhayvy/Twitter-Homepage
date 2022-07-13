@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    --twitter-background-color:black ;
+    --twitter-font-color: #e6ecf0;
+    --twitter-color: #50b7f5;
+    --border-color: rgb(56, 56, 56);
+}
+
+body {
+    background-color: var(--twitter-background-color);
+    color: var(--twitter-font-color);
+    display: flex;
+    height: 100vh;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.fa {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 24px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* .fa:hover {
+    background-color: rgb(211, 211, 211);
+    border-radius: 50%;
+    opacity: 0.1;
+} */
+
+.left-side-div {
+    border-right: 1px solid var(--border-color);
+    flex: 0.2;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.center-div {
+    flex: 0.9;
+    border-right: 1px solid var(--border-color);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border: 1px solid var(--border-color);
+    padding: 15px 20px;
+    background-color: var(--twitter-background-color);
+}
+
+.top h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.center-div::-webkit-scrollbar {
+    display: none;
+}
+
+.center-div {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.tweetbox-input img {
+    border-radius: 50%;
+    height: 40px;
+    width: 35px;
+}
+
+.tweetbox {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    padding-right: 10px;
+}
+
+.tweetbox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetbox-input {
+    display: flex;
+    padding: 20px;
+}
+
+.tweetbox-input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: var(--twitter-background-color);
+}
+
+.tweet-button {
+    background-color: var(--twitter-color);
+    border: none;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin: 20px 0 0 auto;
+    color: var(--twitter-font-color);
+}
+
+.tweet-icons {
+    display: flex;
+    flex-direction: row ;
+}
+
+.more-tweets {
+    color: var(--twitter-color);
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
