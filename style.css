@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,8 @@ body {
     --twitter-font-color: #e6ecf0;
     --twitter-color: #50b7f5;
     --border-color: rgb(56, 56, 56);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 body {
@@ -130,5 +133,73 @@ ul li {
     text-align: center;
     padding: 20px 0;
     border-bottom: 1px solid var(--border-color);
+}
+
+.tweet-head {
+    display: flex;
+}
+
+.tweet-head h5 {
+    padding-top: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile h2 {
+    font-size: large;
+}
+
+.profile h6 {
+    font-size: medium;
+    font-weight: 200;
+    padding: 5px;
+}
+
+.profile h5 {
+    font-weight: 200;
+}
+
+.profile_pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.promoted-tweet{
+    padding-left: 40px;
+}
+
+.tweet-engagements {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tweet-head {
+    height: 30px;
+    display: flex;
+}
+
+.fa fa-map-marker {
+    height: 20px;
+}
+
+#number {
+    padding-top: 23px;
+}
+
+.activity {
+    display: flex;
+}
+
+.tutal-picture {
+    width: 95%;
+    padding: 10px 45px;
 }
 
